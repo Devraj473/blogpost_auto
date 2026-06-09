@@ -1,0 +1,8 @@
+Featured Image Prompt (16:9):
+Generate a wide-angle landscape image of a serene lake at sunrise, with a lone figure of a woman standing at the water's edge, looking out towards the horizon. The woman is slightly turned, revealing a prosthetic limb, symbolizing her journey of recovery and resilience. The sky is painted with hues of pink, orange, and purple, reflecting the hope and new beginnings. In the foreground, incorporate a willow tree with its branches stretching towards the water, creating a sense of harmony and peace.
+
+Thumbnail Prompt (1:1):
+Create a square thumbnail image focusing on the face of the protagonist, with a gentle, determined smile. Her eyes are cast downwards slightly, as if reflecting on her past, with a hint of resolve in her gaze. The background is a soft, blurred image of a willow tree, emphasizing the connection between the protagonist and the symbolic tree. Ensure the lighting is soft and warm, highlighting the contours of her face and the depth of her emotions.
+
+Pinterest Image Prompt (2:3):
+Design a vertical image featuring the protagonist in a powerful pose, standing in front of a willow tree with its branches stretching upwards. The background is a dramatic, high-contrast image of a sunrise or sunset, with bold colors that evoke feelings of hope and courage. Overlay a quote from the story in a modern, bold font, such as 'Courage is not the absence of fear, but the judgment that something else is more important.' Ensure the text is legible and visually appealing, with ample negative space to create a striking visual effect.

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ story_title }} - ItsStoryDay</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #faf9f6;
+            color: #2d2d2d;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            border: 1px solid #eef0f2;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 35px 30px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .header-tag {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+        .meta-desc {
+            font-size: 14px;
+            color: #dae1e7;
+            margin-top: 10px;
+            font-style: italic;
+            line-height: 1.4;
+        }
+        .featured-img-container {
+            position: relative;
+            width: 100%;
+        }
+        .featured-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .photo-attribution {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            font-size: 10px;
+            padding: 4px 8px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .photo-attribution a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .content {
+            padding: 30px;
+        }
+        .intro {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #4a5568;
+            font-weight: 500;
+            margin-bottom: 25px;
+            border-left: 4px solid #3182ce;
+            padding-left: 15px;
+        }
+        .story-body {
+            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #2d3748;
+            margin-bottom: 30px;
+        }
+        .story-body p {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a202c;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .lesson-box {
+            background-color: #f0fff4;
+            border: 1px solid #c6f6d5;
+            border-left: 5px solid #38a169;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .lesson-title {
+            font-weight: 700;
+            color: #22543d;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .lesson-text {
+            color: #2f855a;
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .reflection-box {
+            background-color: #ebf8ff;
+            border: 1px solid #bee3f8;
+            border-left: 5px solid #3182ce;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .reflection-title {
+            font-weight: 700;
+            color: #2b6cb0;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .reflection-list {
+            margin: 0;
+            padding-left: 20px;
+            color: #2b6cb0;
+            font-size: 15px;
+        }
+        .reflection-list li {
+            margin-bottom: 8px;
+        }
+        .faq-item {
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 12px;
+        }
+        .faq-q {
+            font-weight: 700;
+            color: #2d3748;
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+        .faq-a {
+            color: #4a5568;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+        }
+        .meta-section {
+            background-color: #1a202c;
+            color: #a0aec0;
+            border-radius: 0 0 12px 12px;
+            padding: 25px 30px;
+            font-size: 12px;
+        }
+        .meta-section h3 {
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .meta-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .meta-table td {
+            padding: 6px 0;
+            vertical-align: top;
+            border-bottom: 1px solid #2d3748;
+        }
+        .meta-table td.label {
+            font-weight: 600;
+            color: #cbd5e0;
+            width: 120px;
+        }
+        .meta-prompt {
+            background-color: #2d3748;
+            padding: 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 11px;
+            color: #e2e8f0;
+            margin-top: 4px;
+            display: block;
+        }
+        .footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 12px;
+            color: #718096;
+        }
+        .footer a {
+            color: #4a5568;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- Header -->
+            <div class="header">
+                <span class="header-tag">{{ category }}</span>
+                <h1>{{ story_title }}</h1>
+                <div class="meta-desc">{{ meta_description }}</div>
+            </div>
+
+            <!-- Featured Image -->
+            {% if image_url %}
+            <div class="featured-img-container">
+                <img class="featured-img" src="{{ image_url }}" alt="{{ story_title }}">
+                {% if photographer %}
+                <div class="photo-attribution">
+                    Photo by <a href="{{ photographer_url }}" target="_blank">{{ photographer }}</a> on Pexels
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            <!-- Main Content -->
+            <div class="content">
+                <!-- Hook Introduction -->
+                <div class="intro">
+                    {{ introduction }}
+                </div>
+
+                <!-- Story Body -->
+                <div class="story-body">
+                    {{ story_content | safe }}
+                </div>
+
+                <!-- Moral Lesson -->
+                <div class="lesson-box">
+                    <div class="lesson-title">🌱 The Moral Lesson</div>
+                    <p class="lesson-text">{{ moral_lesson }}</p>
+                </div>
+
+                <!-- Reader Reflections -->
+                <div class="reflection-box">
+                    <div class="reflection-title">💭 Reader Reflection</div>
+                    <ul class="reflection-list">
+                        {% for question in reader_reflection %}
+                        <li>{{ question }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="section-title">Frequently Asked Questions</div>
+                {% for item in faq %}
+                <div class="faq-item">
+                    <div class="faq-q">❓ {{ item.question }}</div>
+                    <p class="faq-a">{{ item.answer }}</p>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- SEO & Image Prompts Metadata -->
+            <div class="meta-section">
+                <h3>Technical SEO & AI Image Prompts</h3>
+                <table class="meta-table">
+                    <tr>
+                        <td class="label">Focus Keyword</td>
+                        <td><code>{{ focus_keyword }}</code></td>
+                    </tr>
+                    <tr>
+                        <td class="label">URL Slug</td>
+                        <td><code>{{ url_slug }}</code></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Related Keywords</td>
+                        <td>{{ related_keywords | join(', ') }}</td>
+                    </tr>
+                    <tr>
+                        <td class="label">SEO Tags</td>
+                        <td>{{ seo_tags | join(', ') }}</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Featured Prompt</td>
+                        <td>
+                            <span class="meta-prompt">{{ featured_image_prompt }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Thumbnail Prompt</td>
+                        <td>
+                            <span class="meta-prompt">{{ thumbnail_prompt }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Pinterest Prompt</td>
+                        <td>
+                            <span class="meta-prompt">{{ pinterest_image_prompt }}</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Email Footer -->
+        <div class="footer">
+            <p>Sent automatically by <strong>ItsStoryDay</strong> Blog Automation Platform.</p>
+            <p>© 2026 ItsStoryDay. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
