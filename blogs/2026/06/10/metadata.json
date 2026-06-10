@@ -1,0 +1,53 @@
+{
+  "category": "Moral Stories",
+  "title": "Riverstones Whisper",
+  "seo_title": "Riverstones Whisper",
+  "meta_description": "Discover the power of patience & perseverance",
+  "focus_keyword": "patience and perseverance",
+  "related_keywords": [
+    "importance of patience",
+    "perseverance in craft",
+    "value of mentorship",
+    "overcoming self-doubt",
+    "craftsmanship and dedication",
+    "apprentice journey",
+    "aging and wisdom",
+    "riverstone symbolism",
+    "quaint village life",
+    "personal growth story",
+    "moral lessons from nature",
+    "crafting and creativity",
+    "life journey and lessons",
+    "aging mentor and young apprentice",
+    "beauty in imperfection"
+  ],
+  "seo_tags": [
+    "patience and perseverance",
+    "mentorship and guidance",
+    "craftsmanship and dedication",
+    "personal growth and development",
+    "moral lessons from nature",
+    "quaint village life",
+    "aging and wisdom",
+    "apprentice journey",
+    "overcoming self-doubt",
+    "importance of patience",
+    "perseverance in craft",
+    "value of experience",
+    "beauty in imperfection",
+    "life journey and lessons",
+    "crafting and creativity"
+  ],
+  "url_slug": "when-riverstones-whisper",
+  "date": "2026-06-10 07:52:37",
+  "image": {
+    "url": "https://images.pexels.com/photos/10605257/pexels-photo-10605257.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    "photographer": "Ertabbt",
+    "photographer_url": "https://www.pexels.com/@ertabbt-150087708"
+  },
+  "prompts": {
+    "featured": "Generate a wide-angle landscape shot of a quaint village nestled between two great rivers, with a young apprentice and her mentor standing on the riverbank, surrounded by smooth riverstones, under a warm sunset with golden hues and soft, fluffy clouds.",
+    "thumbnail": "Create a square thumbnail image of the young apprentice's hands holding a beautifully crafted riverstone, with the mentor's wise and aged hands guiding hers, set against a blurred background of the village and rivers.",
+    "pinterest": "Design a vertical image featuring a dramatic, high-contrast visual of a riverstone with the words 'Patience and Perseverance' etched into it, set against a dark blue background with golden text overlays highlighting the story's moral lesson."
+  }
+}
