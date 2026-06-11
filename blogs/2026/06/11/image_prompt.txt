@@ -1,0 +1,8 @@
+Featured Image Prompt (16:9):
+Generate a wide-angle landscape shot (16:9) of a serene garden filled with vibrant flowers and lush greenery, with a young artist sitting in the center, surrounded by her art supplies and lost in thought, as the warm sunlight casts a gentle glow on her face and the camera captures the delicate petals of the flowers swaying gently in the breeze
+
+Thumbnail Prompt (1:1):
+Create a square (1:1) thumbnail image of the young artist's hands holding a delicate flower, with her fingers stained with paint and her eyes closed in contemplation, as the camera zooms in on the intricate details of the flower and the artist's hands
+
+Pinterest Image Prompt (2:3):
+Design a vertical (2:3) image featuring a dramatic, high-contrast visual of the young artist standing in front of a large, abstract art piece, with her arms outstretched and her eyes closed, as the camera captures the vibrant colors and textures of the artwork and the artist's emotional expression, with the text overlay 'When Petals Unfold' in a elegant, cursive font

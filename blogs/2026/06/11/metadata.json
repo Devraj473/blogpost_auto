@@ -1,0 +1,53 @@
+{
+  "category": "Inspirational Stories",
+  "title": "Unfolding Petals",
+  "seo_title": "Unfolding Petals",
+  "meta_description": "Discover how a young artist finds beauty & purpose after a near-fatal accident",
+  "focus_keyword": "healing through art",
+  "related_keywords": [
+    "art therapy",
+    "overcoming adversity",
+    "self discovery",
+    "resilience building",
+    "inspirational stories",
+    "near death experiences",
+    "artistic expression",
+    "healing journeys",
+    "personal growth",
+    "trauma recovery",
+    "creative therapy",
+    "mental health",
+    "emotional healing",
+    "spiritual growth",
+    "story related keywords 15"
+  ],
+  "seo_tags": [
+    "inspirational stories",
+    "art therapy",
+    "self discovery",
+    "resilience",
+    "healing",
+    "personal growth",
+    "overcoming fear",
+    "near death experience",
+    "artistic expression",
+    "mental health",
+    "emotional healing",
+    "spiritual growth",
+    "trauma recovery",
+    "creative therapy",
+    "motivational stories"
+  ],
+  "url_slug": "when-petals-unfold",
+  "date": "2026-06-11 08:20:59",
+  "image": {
+    "url": "https://images.pexels.com/photos/12622293/pexels-photo-12622293.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    "photographer": "Nghia .8pm",
+    "photographer_url": "https://www.pexels.com/@phamnghia"
+  },
+  "prompts": {
+    "featured": "Generate a wide-angle landscape shot (16:9) of a serene garden filled with vibrant flowers and lush greenery, with a young artist sitting in the center, surrounded by her art supplies and lost in thought, as the warm sunlight casts a gentle glow on her face and the camera captures the delicate petals of the flowers swaying gently in the breeze",
+    "thumbnail": "Create a square (1:1) thumbnail image of the young artist's hands holding a delicate flower, with her fingers stained with paint and her eyes closed in contemplation, as the camera zooms in on the intricate details of the flower and the artist's hands",
+    "pinterest": "Design a vertical (2:3) image featuring a dramatic, high-contrast visual of the young artist standing in front of a large, abstract art piece, with her arms outstretched and her eyes closed, as the camera captures the vibrant colors and textures of the artwork and the artist's emotional expression, with the text overlay 'When Petals Unfold' in a elegant, cursive font"
+  }
+}
