@@ -1,4 +1,4 @@
-name: Daily Story Blog Automation
+name: Daily AI Content Automation
 
 on:
   schedule:
@@ -51,6 +51,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new changes to commit."
           else
-            git commit -m "Auto-generated daily story blog: $(date +'%Y-%m-%d')"
+            git commit -m "Auto-generated daily AI content: $(date +'%Y-%m-%d')"
             git push
           fi
