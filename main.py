@@ -42,7 +42,7 @@ def run_daily_workflow():
     except Exception as e:
         logger.error(f"Failed to select category: {e}")
         # Default to first category as fallback
-        category, category_idx = "Motivational Stories", 0
+        category, category_idx = "AI Stories & Ideas", 0
         logger.info(f"Falling back to category: {category}")
 
     # 4. Generate unique topic

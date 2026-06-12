@@ -1,6 +1,6 @@
 # ItsStoryDay - AI Story Blog Automation Platform
 
-ItsStoryDay is a production-ready, serverless Python automation platform that automatically generates high-quality story blog posts every day, stores them in structured folders in this GitHub repository, and emails the complete blog post to a configured email address.
+ItsStoryDay is a production-ready, serverless Python automation platform that automatically generates high-quality AI-focused educational blog posts every day, stores them in structured folders in this GitHub repository, and emails the complete post to a configured email address.
 
 The platform is designed to run automatically through **GitHub Actions** daily at **9:00 AM IST (3:30 AM UTC)**, requiring no VPS, server, or local machine.
 
@@ -8,9 +8,9 @@ The platform is designed to run automatically through **GitHub Actions** daily a
 
 ## 🌟 Key Features
 
-- **Human-Quality Creative Writing:** Integrates the Groq API (using highly advanced LLM models like `llama-3.3-70b-specdec` or `llama-3-70b-8192`) to craft emotionally engaging, character-driven story content (1500–3000 words).
-- **Free Visual Assets:** Automatically queries the Pexels (Pixel) API to fetch and download high-quality stock photo URLs relevant to the story's visual focus, automatically embedding them in the email and HTML posts.
-- **Sequential Category Rotation:** Tracks category selections in a local state file (`config/state.json`) which is updated and pushed back to the Git repository, guaranteeing that the 10 story categories rotate sequentially "line-by-line".
+- **Practical AI Educational Writing:** Integrates the Groq API (using highly advanced LLM models like `llama-3.3-70b-specdec` or `llama-3-70b-8192`) to craft practical AI-focused educational content (1500–3000 words).
+- **Free Visual Assets:** Automatically queries the Pexels (Pixel) API to fetch and download high-quality stock photo URLs relevant to the daily AI topic's visual focus, automatically embedding them in the email and HTML posts.
+- **Sequential Category Rotation:** Tracks category selections in a local state file (`config/state.json`) which is updated and pushed back to the Git repository, guaranteeing that 10 AI-focused categories rotate sequentially "line-by-line".
 - **Dynamic SEO Optimization:** Automatically builds complete SEO title, meta description, primary keyword, 15 related keywords, 15 SEO tags, and URL slug.
 - **Beautiful HTML Newsletter Emails:** Dispatches premium styled responsive HTML emails through SMTP with embedded visuals, serif reading layouts, styled blockquotes, and Q&A accordions.
 - **Organized Storage:** Writes generated posts inside `blogs/YYYY/MM/DD/` directories as `story.md`, `story.html`, `metadata.json`, and `image_prompt.txt`.
@@ -43,7 +43,7 @@ itsstoryday-automation/
 │   └── state.json             # tracks category sequential indexes across commits
 ├── prompts/
 │   ├── topic_generator.txt    # prompt template for AI topic selection
-│   └── story_generator.txt    # prompt template for AI story writing
+│   └── story_generator.txt    # prompt template for AI content writing
 ├── templates/
 │   └── email_template.html    # responsive Jinja2 HTML email template
 ├── tests/
@@ -93,12 +93,12 @@ python main.py
 ```
 This will:
 1. Load credentials.
-2. Select the next category sequentially from `config/state.json`.
-3. Check recently written stories in `blogs/` to avoid duplication.
-4. Generate the topic and story using Groq.
+2. Select the next AI-focused category sequentially from `config/state.json`.
+3. Check recently written topics in `blogs/` to avoid duplication.
+4. Generate the daily AI topic and long-form content using Groq.
 5. Search Pexels for a visual asset.
 6. Create files in `blogs/YYYY/MM/DD/`.
-7. Deliver the story email.
+7. Deliver the daily AI content email.
 8. Save the state back to `config/state.json`.
 
 ---
@@ -136,4 +136,4 @@ To allow GitHub Actions to commit the generated blog files and the updated `stat
 4. Click **Save**.
 
 Now the script will run automatically every morning, generate files, email them, commit the daily blog folder to your GitHub repo, and advance the category index for the next day.
-You can also trigger it manually anytime by going to the **Actions** tab in GitHub, clicking **Daily Story Blog Automation**, and selecting **Run workflow**.
+You can also trigger it manually anytime by going to the **Actions** tab in GitHub, clicking **Daily AI Content Automation**, and selecting **Run workflow**.
