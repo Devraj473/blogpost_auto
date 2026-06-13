@@ -1,0 +1,53 @@
+{
+  "category": "Kids Stories",
+  "title": "Moonlit Dreams",
+  "seo_title": "Moonlit Dreams",
+  "meta_description": "Luna discovers a magical paintbrush, bringing art to life under the full moon.",
+  "focus_keyword": "creativity and perseverance",
+  "related_keywords": [
+    "magical realism",
+    "children's stories",
+    "moonlight inspiration",
+    "artistic talent",
+    "small village life",
+    "full moon magic",
+    "dreams and reality",
+    "harnessing creativity",
+    "balancing life",
+    "young artist",
+    "self-discovery",
+    "empowerment through art",
+    "fantasy stories",
+    "kids adventure",
+    "story related keywords 15"
+  ],
+  "seo_tags": [
+    "kids stories",
+    "magical paintbrush",
+    "moonlit nights",
+    "artistic dreams",
+    "small village tales",
+    "creativity and perseverance",
+    "full moon magic",
+    "inspirational stories",
+    "children's fantasy",
+    "young artists",
+    "self-discovery",
+    "empowerment",
+    "adventure stories",
+    "magical realism",
+    "village life"
+  ],
+  "url_slug": "moonlit-paintbrush-dreams",
+  "date": "2026-06-13 07:10:16",
+  "image": {
+    "url": "https://images.pexels.com/photos/4709869/pexels-photo-4709869.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    "photographer": "cottonbro studio",
+    "photographer_url": "https://www.pexels.com/@cottonbro"
+  },
+  "prompts": {
+    "featured": "Generate a wide-angle landscape shot of a small village under the light of a full moon, with a young girl standing in the center, holding a magical paintbrush and surrounded by vibrant, glowing artwork that seems to come alive in the moonlight.",
+    "thumbnail": "Create a square thumbnail image of Luna's magical paintbrush, with the brush itself glowing softly in the moonlight and surrounded by subtle, swirling patterns of color that evoke a sense of creativity and wonder.",
+    "pinterest": "Design a vertical image featuring a dramatic, high-contrast visual of Luna standing in front of a massive, glowing canvas, with the magical paintbrush in hand and a look of inspiration and wonder on her face, surrounded by text overlays that read 'Moonlit Paintbrush Dreams' and 'Where creativity meets magic'."
+  }
+}
