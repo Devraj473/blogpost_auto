@@ -1,0 +1,8 @@
+Featured Image Prompt (16:9):
+Generate a wide-angle landscape image of a serene village nestled between rolling hills, with a young girl standing in the center, playing a magical flute under a starry night sky. The flute should be glowing softly, and the music notes should be visible as they float gently through the air, filling the village with a warm, enchanting light.
+
+Thumbnail Prompt (1:1):
+Create a square thumbnail image of the young girl's hands holding the magical flute, with a few music notes floating around her fingers. The flute should be the focal point, with the girl's hands and the music notes blurred slightly in the background.
+
+Pinterest Image Prompt (2:3):
+Design a vertical image featuring a dramatic, high-contrast visual of the young girl playing the magical flute on a hill overlooking the village. The sky should be filled with stars, and the flute should be glowing brightly, with the music notes swirling around her in a mesmerizing pattern. Add a text overlay with the story's title, 'Starlight Lullaby', in a elegant, cursive font.
