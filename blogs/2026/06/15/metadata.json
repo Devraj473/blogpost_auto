@@ -1,0 +1,53 @@
+{
+  "category": "Animal Stories",
+  "title": "Beyond Treetops",
+  "seo_title": "Beyond Treetops",
+  "meta_description": "A young falcon's journey to overcome fear and discover perseverance",
+  "focus_keyword": "overcoming fear of flying",
+  "related_keywords": [
+    "fear of flying",
+    "perseverance",
+    "self-discovery",
+    "animal stories",
+    "forest creatures",
+    "wildlife adventure",
+    "young hero",
+    "personal growth",
+    "nature",
+    "wildlife",
+    "birds",
+    "owls",
+    "falcons",
+    "friendship",
+    "wilderness"
+  ],
+  "seo_tags": [
+    "animal stories",
+    "fear of flying",
+    "perseverance",
+    "self-discovery",
+    "forest creatures",
+    "wildlife adventure",
+    "young hero",
+    "personal growth",
+    "nature",
+    "wildlife",
+    "birds",
+    "owls",
+    "falcons",
+    "friendship",
+    "wilderness"
+  ],
+  "url_slug": "beyond-the-treetop-canopy",
+  "date": "2026-06-15 09:43:38",
+  "image": {
+    "url": "https://images.pexels.com/photos/15144988/pexels-photo-15144988.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    "photographer": "Matthias Groeneveld",
+    "photographer_url": "https://www.pexels.com/@matthiasgroeneveld"
+  },
+  "prompts": {
+    "featured": "A wide-angle landscape shot of a lush forest at sunrise, with the warm light casting a golden glow over the treetops, and a young falcon perched on a branch, looking out at the viewer with a determined glint in her eye. The image should feature a mix of green foliage, towering trees, and a clear blue sky with a few wispy clouds.",
+    "thumbnail": "A close-up portrait of Aria, the young falcon, with her feathers ruffled and her eyes shining with determination. The image should be set against a muted background, with a shallow depth of field to emphasize Aria's features and personality.",
+    "pinterest": "A vertical image featuring a dramatic silhouette of Aria in flight, set against a vibrant sunset sky with hues of pink, orange, and purple. The image should include a text overlay with a quote from the story, such as 'The true meaning of perseverance lies not in the absence of fear, but in the courage to face it head-on.'"
+  }
+}

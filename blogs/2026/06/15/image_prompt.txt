@@ -1,0 +1,8 @@
+Featured Image Prompt (16:9):
+A wide-angle landscape shot of a lush forest at sunrise, with the warm light casting a golden glow over the treetops, and a young falcon perched on a branch, looking out at the viewer with a determined glint in her eye. The image should feature a mix of green foliage, towering trees, and a clear blue sky with a few wispy clouds.
+
+Thumbnail Prompt (1:1):
+A close-up portrait of Aria, the young falcon, with her feathers ruffled and her eyes shining with determination. The image should be set against a muted background, with a shallow depth of field to emphasize Aria's features and personality.
+
+Pinterest Image Prompt (2:3):
+A vertical image featuring a dramatic silhouette of Aria in flight, set against a vibrant sunset sky with hues of pink, orange, and purple. The image should include a text overlay with a quote from the story, such as 'The true meaning of perseverance lies not in the absence of fear, but in the courage to face it head-on.'
