@@ -1,0 +1,53 @@
+{
+  "category": "Adventure Stories",
+  "title": "Ember of Ancients",
+  "seo_title": "Ember of Ancients",
+  "meta_description": "Uncover the secrets of a legendary lost city",
+  "focus_keyword": "lost city discovery",
+  "related_keywords": [
+    "archaeology adventures",
+    "desert expeditions",
+    "ancient city ruins",
+    "treasure hunts",
+    "rival treasure hunters",
+    "perilous quests",
+    "legendary cities",
+    "ancient civilizations",
+    "desert survival",
+    "archaeological discoveries",
+    "lost city legends",
+    "adventure stories",
+    "action-packed expeditions",
+    "historical mysteries",
+    "story related keywords 15"
+  ],
+  "seo_tags": [
+    "archaeology",
+    "adventure",
+    "lost city",
+    "desert expedition",
+    "ancient ruins",
+    "treasure hunt",
+    "rival treasure hunters",
+    "perilous quest",
+    "legendary city",
+    "ancient civilization",
+    "desert survival",
+    "archaeological discovery",
+    "lost city legend",
+    "adventure story",
+    "action-packed expedition"
+  ],
+  "url_slug": "ember-of-the-ancients",
+  "date": "2026-06-17 08:41:06",
+  "image": {
+    "url": "https://images.pexels.com/photos/21405195/pexels-photo-21405195.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    "photographer": "Matteo Roman",
+    "photographer_url": "https://www.pexels.com/@matteo-roman-1151921619"
+  },
+  "prompts": {
+    "featured": "Generate a wide-angle landscape shot of Dr. Rodriguez standing at the edge of a vast, sandy dune, with the ruins of the lost city visible in the distance. The sun is setting, casting a warm orange glow over the scene, and a fierce sandstorm is brewing on the horizon. Dr. Rodriguez is dressed in worn, practical clothing and gear, with a determined look on her face as she gazes out at the ancient city.",
+    "thumbnail": "Create a square thumbnail image of Dr. Rodriguez's worn, leather-bound journal, lying open on a rocky outcropping. The journal pages are filled with handwritten notes and sketches of ancient artifacts, and a small, golden amulet is visible in the corner of the image. The background is a blurred, sandy texture, and the overall mood is one of quiet contemplation.",
+    "pinterest": "Design a vertical image featuring a dramatic, high-contrast visual of Dr. Rodriguez standing at the entrance to the lost city, with the ancient stone gates looming above her. The image is overlaid with bold, golden text, reading 'Uncover the Secrets of the Ancients' in a elegant, cursive font. The background is a deep, mysterious blue, and the overall mood is one of excitement and adventure."
+  }
+}
