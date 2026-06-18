@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Weaver - ItsStoryDay</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #faf9f6;
+            color: #2d2d2d;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            border: 1px solid #eef0f2;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 35px 30px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .header-tag {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+        .meta-desc {
+            font-size: 14px;
+            color: #dae1e7;
+            margin-top: 10px;
+            font-style: italic;
+            line-height: 1.4;
+        }
+        .featured-img-container {
+            position: relative;
+            width: 100%;
+        }
+        .featured-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .photo-attribution {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            font-size: 10px;
+            padding: 4px 8px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .photo-attribution a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .content {
+            padding: 30px;
+        }
+        .intro {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #4a5568;
+            font-weight: 500;
+            margin-bottom: 25px;
+            border-left: 4px solid #3182ce;
+            padding-left: 15px;
+        }
+        .story-body {
+            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #2d3748;
+            margin-bottom: 30px;
+        }
+        .story-body p {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a202c;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .lesson-box {
+            background-color: #f0fff4;
+            border: 1px solid #c6f6d5;
+            border-left: 5px solid #38a169;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .lesson-title {
+            font-weight: 700;
+            color: #22543d;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .lesson-text {
+            color: #2f855a;
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .reflection-box {
+            background-color: #ebf8ff;
+            border: 1px solid #bee3f8;
+            border-left: 5px solid #3182ce;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .reflection-title {
+            font-weight: 700;
+            color: #2b6cb0;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .reflection-list {
+            margin: 0;
+            padding-left: 20px;
+            color: #2b6cb0;
+            font-size: 15px;
+        }
+        .reflection-list li {
+            margin-bottom: 8px;
+        }
+        .faq-item {
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 12px;
+        }
+        .faq-q {
+            font-weight: 700;
+            color: #2d3748;
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+        .faq-a {
+            color: #4a5568;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+        }
+        .meta-section {
+            background-color: #1a202c;
+            color: #a0aec0;
+            border-radius: 0 0 12px 12px;
+            padding: 25px 30px;
+            font-size: 12px;
+        }
+        .meta-section h3 {
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .meta-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .meta-table td {
+            padding: 6px 0;
+            vertical-align: top;
+            border-bottom: 1px solid #2d3748;
+        }
+        .meta-table td.label {
+            font-weight: 600;
+            color: #cbd5e0;
+            width: 120px;
+        }
+        .meta-prompt {
+            background-color: #2d3748;
+            padding: 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 11px;
+            color: #e2e8f0;
+            margin-top: 4px;
+            display: block;
+        }
+        .footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 12px;
+            color: #718096;
+        }
+        .footer a {
+            color: #4a5568;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- Header -->
+            <div class="header">
+                <span class="header-tag">Mystery Stories</span>
+                <h1>Shadow Weaver</h1>
+                <div class="meta-desc">Unravel the truth behind a decades-old tragedy in a mysterious village</div>
+            </div>
+
+            <!-- Featured Image -->
+            
+            <div class="featured-img-container">
+                <img class="featured-img" src="https://images.pexels.com/photos/14299966/pexels-photo-14299966.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Shadow Weaver">
+                
+                <div class="photo-attribution">
+                    Photo by <a href="https://www.pexels.com/@fotios-photos" target="_blank">Lisa from Pexels</a> on Pexels
+                </div>
+                
+            </div>
+            
+
+            <!-- Main Content -->
+            <div class="content">
+                <!-- Hook Introduction -->
+                <div class="intro">
+                    In the depths of a secluded village, where time stands still, a young apprentice weaver stumbles upon an ancient loom that holds the secrets of the past. As she begins to weave, the threads of fate start to unravel, revealing a decades-old tragedy that will change the village forever.
+                </div>
+
+                <!-- Story Body -->
+                <div class="story-body">
+                    <h3>Chapter 1: The Discovery</h3>
+<p>The village of Ashwood lay shrouded in a perpetual mist, as if the very fabric of time had woven a veil of secrecy around it. The thatched roofs of the cottages blended seamlessly into the rolling hills, and the air was alive with the sweet scent of blooming wildflowers. It was a place where tradition and myth entwined like the threads of a rich embroidery, and the villagers lived in harmony with the land and their heritage. In this secluded world, a young apprentice weaver named Aria stumbled upon a mysterious, ancient loom hidden deep within the village's archives.</p>
+<p>Aria's fingers danced across the dusty shelves, her eyes scanning the rows of forgotten relics and mysterious artifacts. The air was thick with the scent of aged wood and forgotten memories. As she pushed aside a tattered curtain, a faint glow caught her attention, emanating from a hidden alcove. The soft light illuminated a beautifully crafted loom, its wooden frame adorned with intricate carvings of leaves and vines. The loom seemed to hum with an otherworldly energy, as if it had been waiting for Aria's discovery.</p>
+<p>"What is this?" Aria breathed, her voice barely audible over the pounding of her heart. She reached out a trembling hand, her fingers brushing against the loom's smooth surface. The wood felt warm to the touch, as if it had been waiting for her presence. Aria's mentor, the village's esteemed weaver, Elara, stood behind her, a look of surprise and concern etched on her face.</p>
+<p>"Aria, what have you found?" Elara asked, her voice low and cautious. "This is a part of our village's history, a relic from a time long past. It is said that this loom holds the secrets of the past, and weaves the threads of fate that connect us all."</p>
+<p>Aria's eyes sparkled with curiosity as she turned to face Elara. "What do you mean? What secrets could it possibly hold?" she asked, her voice filled with a sense of wonder. Elara's expression turned somber, and she glanced around the archive, as if ensuring they were truly alone.</p>
+<p>"This loom is connected to a tragedy that occurred in our village decades ago," Elara began, her voice barely above a whisper. "A tragedy that has left a scar on our collective memory. It is said that the loom holds the truth behind that event, and that it can weave the threads of fate that connect us all." Aria's mind reels with questions, but before she could ask any of them, Elara's expression turned serious.</p>
+<p>"Aria, I must warn you, the secrets that this loom holds are not for the faint of heart. Are you prepared to face what you may discover?" Elara's words hung in the air, heavy with an unspoken warning. Aria's heart skipped a beat as she hesitated, unsure of what lay ahead, but her curiosity and determination propelled her forward.</p>
+
+<h3>Chapter 2: The Legend</h3>
+<p>The village's elderly storyteller, Thorne, sat by the fire, his eyes aglow with a deep wisdom. Aria and Elara sat at his feet, listening with rapt attention as he began to spin a tale of love, loss, and tragedy. The flames danced and crackled, casting flickering shadows on the walls as Thorne's voice wove a spell of enchantment.</p>
+<p>"It was a time of great prosperity in our village," Thorne began, his voice low and soothing. "The loom was said to have been created by the village's founders, who had imbued it with their collective knowledge and wisdom. It was said that the loom could weave not only fabric, but the very fabric of reality itself." Aria's eyes widened as she listened, her imagination running wild with the possibilities.</p>
+<p>"But as time passed, a darkness fell over the village," Thorne continued, his voice taking on a somber tone. "A great tragedy occurred, one that would leave a scar on our collective memory. The loom, it was said, held the key to understanding the events that transpired, but it was lost to the ages, hidden away in the archives, waiting for the right person to discover it." Elara's eyes met Aria's, a deep understanding passing between them.</p>
+<p>"What was the tragedy?" Aria asked, her voice barely above a whisper. Thorne's expression turned grave, and he paused, collecting his thoughts before speaking.</p>
+<p>"It was a fire that swept through the village, claiming the lives of many of our loved ones," Thorne said, his voice heavy with emotion. "The fire was said to have been started by a rival village, one that had long been jealous of our prosperity. But there were those who believed that the fire was not just a random act of violence, but a symptom of a deeper darkness that had taken root in our village." Aria's mind reeled with the implications, her heart heavy with the weight of the village's history.</p>
+<p>"And the loom?" Aria asked, her curiosity getting the better of her. "What role did it play in all of this?" Thorne's eyes seemed to cloud over, as if the memories were too painful to recall.</p>
+<p>"The loom was said to have been used by the village's founders to weave a fabric of protection around the village," Thorne explained. "But as the tragedy unfolded, the loom was said to have been used to weave a different kind of fabric, one that would reveal the truth behind the events that transpired." Aria's thoughts swirled with the possibilities, her determination to uncover the truth growing with each passing moment.</p>
+
+<h3>Chapter 3: The Weaving</h3>
+<p>Aria's fingers moved deftly over the loom, the threads of fate weaving together in a complex pattern. The room was bathed in a soft, ethereal light, as if the very fabric of reality was being manipulated by the loom's ancient magic. Elara stood beside her, guiding her hands as she worked the threads into a intricate design.</p>
+<p>"Remember, Aria, the loom is a tool, not a master," Elara cautioned, her voice low and soothing. "You must listen to its rhythms, and allow it to guide you." Aria's eyes closed, her senses heightening as she focused on the loom's gentle hum. The threads seemed to vibrate with an otherworldly energy, as if they were alive, and Aria felt herself becoming one with the loom.</p>
+<p>"I feel it," Aria breathed, her voice barely audible over the sound of the loom. "I feel the threads of fate connecting, weaving together in a pattern." Elara's eyes met hers, a deep understanding passing between them.</p>
+<p>"You are becoming one with the loom," Elara said, her voice filled with a sense of wonder. "You are allowing it to guide you, to reveal the secrets that it holds." As Aria continued to weave, the room began to fade away, replaced by visions of the past, and the people who had lived and died in the village. Aria saw glimpses of a great fire, of people running and screaming, of a rival village's jealousy and hatred.</p>
+<p>The visions were fragmented, and Aria struggled to make sense of them. But as she continued to weave, the threads of fate began to reveal a larger pattern, one that spoke of a deep-seated darkness that had taken root in the village. Aria's heart pounded in her chest, her mind reeling with the implications of what she was seeing.</p>
+<p>"What does it mean?" Aria asked, her voice barely above a whisper. Elara's expression turned somber, and she glanced around the room, as if ensuring they were truly alone.</p>
+<p>"It means that the tragedy that occurred in our village was not just a random act of violence," Elara said, her voice low and serious. "It means that there were forces at work, forces that were driven by a deep-seated hatred and jealousy. And it means that the loom holds the key to understanding the events that transpired." Aria's thoughts swirled with the possibilities, her determination to uncover the truth growing with each passing moment.</p>
+
+<h3>Chapter 4: The Secrets</h3>
+<p>Aria's eyes scanned the fabric that she had woven, the threads of fate revealing a complex pattern of secrets and lies. The room was bathed in a soft, ethereal light, as if the very fabric of reality was being manipulated by the loom's ancient magic. Elara stood beside her, guiding her as she deciphered the meaning behind the threads.</p>
+<p>"This thread represents the village's founders," Elara explained, her voice low and soothing. "And this one represents the rival village that was said to have started the fire." Aria's eyes followed the threads, seeing how they intersected and diverged, revealing a complex web of relationships and motivations.</p>
+<p>"And what about this thread?" Aria asked, her finger tracing the path of a single thread that seemed to weave in and out of the others. Elara's expression turned serious, and she glanced around the room, as if ensuring they were truly alone.</p>
+<p>"That thread represents a figure from our village's past," Elara said, her voice barely above a whisper. "A figure who was thought to have been lost to the fire, but who may have actually survived." Aria's eyes widened as she realized the implications of what she was seeing.</p>
+<p>"You mean that someone from our village may have been involved in the fire?" Aria asked, her voice filled with a sense of shock and horror. Elara's expression turned somber, and she nodded.</p>
+<p>"It is possible," Elara said, her voice low and serious. "The threads of fate are revealing a complex pattern of secrets and lies, and it is up to us to uncover the truth." Aria's thoughts swirled with the possibilities, her determination to uncover the truth growing with each passing moment.</p>
+<p>As they continued to decipher the meaning behind the threads, Aria began to realize that the truth behind the tragedy was far more complex than she had ever imagined. The loom was revealing a web of secrets and lies that went far beyond a simple act of violence, and Aria was determined to follow the threads to their ultimate conclusion.</p>
+
+<h3>Chapter 5: The Consequences</h3>
+<p>The village of Ashwood was abuzz with the news of Aria's discovery. The threads of fate that she had woven on the ancient loom had revealed a complex pattern of secrets and lies, and the villagers were struggling to come to terms with the truth. The air was thick with tension, as if the very fabric of reality was being torn apart by the revelations.</p>
+<p>Aria stood at the center of the storm, her heart pounding in her chest as she faced the villagers. Elara stood beside her, a look of calm determination on her face.</p>
+<p>"We must confront the past," Elara said, her voice ringing out across the village. "We must face the secrets and lies that have been hidden for so long, and we must work to heal the wounds that have been inflicted." The villagers murmured among themselves, some calling for justice, others for forgiveness.</p>
+<p>Aria's eyes met those of the village elder, a man named Thorne who had always been a source of wisdom and guidance. His eyes were filled with a deep sadness, and Aria knew that he was struggling to come to terms with the truth.</p>
+<p>"What do we do now?" Thorne asked, his voice barely above a whisper. Aria took a deep breath, her heart filled with a sense of determination.</p>
+<p>"We must work to rebuild our village," Aria said, her voice filled with conviction. "We must work to heal the wounds of the past, and to create a new future for ourselves. The loom has revealed the secrets of our past, and now it is up to us to use that knowledge to create a better future." The villagers nodded, a sense of determination and purpose spreading through the crowd.</p>
+<p>As the days passed, the village of Ashwood began to heal. The villagers worked together to rebuild and restore their homes, and to create a new sense of community and purpose. Aria and Elara stood at the center of the effort, guiding and directing the villagers as they worked to create a brighter future.</p>
+<p>The ancient loom stood as a symbol of the village's newfound understanding, a reminder of the secrets and lies that had been revealed, and of the power of the threads of fate to shape and guide their lives. Aria's heart was filled with a sense of pride and purpose, knowing that she had played a key role in uncovering the truth, and in helping the village to heal and move forward.</p>
+
+<h3>Chapter 6: The Aftermath</h3>
+<p>The village of Ashwood was forever changed by the revelations that had been uncovered by the ancient loom. The threads of fate had revealed a complex pattern of secrets and lies, and the villagers had been forced to confront the truth about their past. The air was still thick with tension, but there was a sense of hope and renewal that had not been felt in years.</p>
+<p>Aria walked through the village, her eyes taking in the sights and sounds of the newly rebuilt homes and gardens. The villagers were smiling and laughing, their faces filled with a sense of joy and purpose. Elara stood beside her, a look of calm determination on her face.</p>
+<p>"We have come a long way," Elara said, her voice low and soothing. "But there is still much work to be done. We must continue to work together, to rebuild and restore our village, and to create a brighter future for ourselves." Aria nodded, her heart filled with a sense of determination and purpose.</p>
+<p>"I am proud of what we have accomplished," Aria said, her voice filled with conviction. "And I am excited to see what the future holds. The loom has revealed the secrets of our past, and now it is up to us to use that knowledge to create a better future." Elara smiled, her eyes filled with a deep warmth.</p>
+<p>"You have been a true leader, Aria," Elara said, her voice filled with praise. "You have helped to uncover the truth, and to guide our village towards a brighter future. I am honored to have been a part of your journey." Aria's heart swelled with emotion, her eyes filling with tears.</p>
+<p>"I could not have done it without you," Aria said, her voice barely above a whisper. "You have been my guide and my mentor, and I am forever grateful for your wisdom and your support." Elara's smile deepened, and she reached out to hug Aria tightly.</p>
+<p>"We have been through so much together," Elara said, her voice filled with emotion. "And we will continue to face whatever challenges come our way, side by side." Aria nodded, her heart filled with a sense of joy and purpose. She knew that she had found a true friend and ally in Elara, and that together, they would face whatever the future held.</p>
+
+<h3>Chapter 7: The New Beginning</h3>
+<p>The village of Ashwood was reborn, its people emerging from the shadows of their past to forge a new future. The ancient loom stood as a symbol of their newfound understanding, a reminder of the secrets and lies that had been revealed, and of the power of the threads of fate to shape and guide their lives. Aria and Elara stood at the center of the village, their eyes filled with a sense of hope and renewal.</p>
+<p>"We have come a long way," Elara said, her voice low and soothing. "But there is still much work to be done. We must continue to work together, to rebuild and restore our village, and to create a brighter future for ourselves." Aria nodded, her heart filled with a sense of determination and purpose.</p>
+<p>"I am excited to see what the future holds," Aria said, her voice filled with conviction. "The loom has revealed the secrets of our past, and now it is up to us to use that knowledge to create a better future." Elara smiled, her eyes filled with a deep warmth.</p>
+<p>"You have been a true leader, Aria," Elara said, her voice filled with praise. "You have helped to uncover the truth, and to guide our village towards a brighter future. I am honored to have been a part of your journey." Aria's heart swelled with emotion, her eyes filling with tears.</p>
+<p>"I could not have done it without you," Aria said, her voice barely above a whisper. "You have been my guide and my mentor, and I am forever grateful for your wisdom and your support." Elara's smile deepened, and she reached out to hug Aria tightly.</p>
+<p>"We have been through so much together," Elara said, her voice filled with emotion. "And we will continue to face whatever challenges come our way, side by side." Aria nodded, her heart filled with a sense of joy and purpose. She knew that she had found a true friend and ally in Elara, and that together, they would face whatever the future held.</p>
+<p>The villagers began to gather around them, their faces filled with smiles and laughter. The air was filled with music and dancing, as the village of Ashwood celebrated its newfound freedom and renewal. Aria and Elara stood at the center of the celebration, their hearts filled with a sense of hope and joy.</p>
+<p>"This is just the beginning," Aria said, her voice filled with excitement. "We have a bright future ahead of us, and I am honored to be a part of it." Elara smiled, her eyes filled with a deep warmth.</p>
+<p>"We will face whatever challenges come our way," Elara said, her voice filled with determination. "Together, we will create a brighter future for ourselves and for our village." The villagers cheered, their voices ringing out across the village. Aria and Elara stood together, their hearts filled with a sense of hope and renewal, as they embarked on their new journey, side by side.</p>
+                </div>
+
+                <!-- Moral Lesson -->
+                <div class="lesson-box">
+                    <div class="lesson-title">🌱 The Moral Lesson</div>
+                    <p class="lesson-text">The truth, no matter how painful, is the only way to heal and move forward, and sometimes, it's the smallest threads that can weave the most significant changes in our lives</p>
+                </div>
+
+                <!-- Reader Reflections -->
+                <div class="reflection-box">
+                    <div class="reflection-title">💭 Reader Reflection</div>
+                    <ul class="reflection-list">
+                        
+                        <li>What secrets do you think your own community might be hiding, and how would you go about uncovering them?</li>
+                        
+                        <li>How do you think the discovery of the ancient loom affected the young apprentice weaver's life, and what would you do if you were in her shoes?</li>
+                        
+                        <li>In what ways can the past inform and shape our present, and what are the consequences of ignoring or suppressing historical truths?</li>
+                        
+                    </ul>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="section-title">Frequently Asked Questions</div>
+                
+                <div class="faq-item">
+                    <div class="faq-q">❓ What is the significance of the ancient loom in the story?</div>
+                    <p class="faq-a">The ancient loom serves as a symbol of the village's history and the threads of fate that connect its residents. It holds the secrets of the past and has the power to reveal the truth behind the decades-old tragedy.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-q">❓ How does the young apprentice weaver's discovery affect the village?</div>
+                    <p class="faq-a">The discovery of the ancient loom and the truth it reveals sets off a chain of events that changes the village forever, forcing its residents to confront their past and re-evaluate their understanding of reality.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-q">❓ What themes are explored in the story?</div>
+                    <p class="faq-a">The story explores themes of mystery, tragedy, mythology, reality, and the power of the past to shape our present. It also touches on the idea that the truth, no matter how painful, is essential for healing and moving forward.</p>
+                </div>
+                
+            </div>
+
+            <!-- SEO & Image Prompts Metadata -->
+            <div class="meta-section">
+                <h3>Technical SEO & AI Image Prompts</h3>
+                <table class="meta-table">
+                    <tr>
+                        <td class="label">Focus Keyword</td>
+                        <td><code>unraveling the past</code></td>
+                    </tr>
+                    <tr>
+                        <td class="label">URL Slug</td>
+                        <td><code>the-shadow-weaver</code></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Related Keywords</td>
+                        <td>mystery stories, ancient loom, weaving fate, small village secrets, decades-old tragedy, myth and reality, village history, apprentice weaver, threads of fate, blurring reality, unraveling truth, isolated community, mysterious artifacts, legendary loom, historical mystery</td>
+                    </tr>
+                    <tr>
+                        <td class="label">SEO Tags</td>
+                        <td>mystery, thriller, small town secrets, ancient mysteries, weaving, fate, tragedy, mythology, reality, history, apprentice, village life, isolated communities, legendary artifacts, mysterious events</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Featured Prompt</td>
+                        <td>
+                            <span class="meta-prompt">A wide-angle landscape shot of the secluded village at dusk, with the ancient loom prominently displayed in the center of the image. The loom is surrounded by threads of different colors, which seem to be weaving together to form a complex pattern. In the background, the village's residents are seen going about their daily lives, oblivious to the secrets that the loom holds. The image should have a mystical and eerie atmosphere, with the loom being the focal point.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Thumbnail Prompt</td>
+                        <td>
+                            <span class="meta-prompt">A close-up shot of the young apprentice weaver's hands as she works on the ancient loom. The image should focus on the intricate patterns and threads that she is weaving, with the loom's wooden frame and the village's surroundings blurred in the background. The apprentice's hands should be the main subject of the image, with the threads and the loom's mechanisms visible in detail.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Pinterest Prompt</td>
+                        <td>
+                            <span class="meta-prompt">A vertical image featuring a dramatic and high-contrast visual of the ancient loom at night, with the threads and the loom's mechanisms lit up by a soft, ethereal glow. The image should have a text overlay with a quote from the story, such as 'The truth is in the threads' or 'Unraveling the past, one thread at a time.' The background should be dark and muted, with the loom and the threads being the main focus of the image.</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Email Footer -->
+        <div class="footer">
+            <p>Sent automatically by <strong>ItsStoryDay</strong> Blog Automation Platform.</p>
+            <p>© 2026 ItsStoryDay. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

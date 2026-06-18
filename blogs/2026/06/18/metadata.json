@@ -1,0 +1,53 @@
+{
+  "category": "Mystery Stories",
+  "title": "Shadow Weaver",
+  "seo_title": "Shadow Weaver",
+  "meta_description": "Unravel the truth behind a decades-old tragedy in a mysterious village",
+  "focus_keyword": "unraveling the past",
+  "related_keywords": [
+    "mystery stories",
+    "ancient loom",
+    "weaving fate",
+    "small village secrets",
+    "decades-old tragedy",
+    "myth and reality",
+    "village history",
+    "apprentice weaver",
+    "threads of fate",
+    "blurring reality",
+    "unraveling truth",
+    "isolated community",
+    "mysterious artifacts",
+    "legendary loom",
+    "historical mystery"
+  ],
+  "seo_tags": [
+    "mystery",
+    "thriller",
+    "small town secrets",
+    "ancient mysteries",
+    "weaving",
+    "fate",
+    "tragedy",
+    "mythology",
+    "reality",
+    "history",
+    "apprentice",
+    "village life",
+    "isolated communities",
+    "legendary artifacts",
+    "mysterious events"
+  ],
+  "url_slug": "the-shadow-weaver",
+  "date": "2026-06-18 08:24:33",
+  "image": {
+    "url": "https://images.pexels.com/photos/14299966/pexels-photo-14299966.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+    "photographer": "Lisa from Pexels",
+    "photographer_url": "https://www.pexels.com/@fotios-photos"
+  },
+  "prompts": {
+    "featured": "A wide-angle landscape shot of the secluded village at dusk, with the ancient loom prominently displayed in the center of the image. The loom is surrounded by threads of different colors, which seem to be weaving together to form a complex pattern. In the background, the village's residents are seen going about their daily lives, oblivious to the secrets that the loom holds. The image should have a mystical and eerie atmosphere, with the loom being the focal point.",
+    "thumbnail": "A close-up shot of the young apprentice weaver's hands as she works on the ancient loom. The image should focus on the intricate patterns and threads that she is weaving, with the loom's wooden frame and the village's surroundings blurred in the background. The apprentice's hands should be the main subject of the image, with the threads and the loom's mechanisms visible in detail.",
+    "pinterest": "A vertical image featuring a dramatic and high-contrast visual of the ancient loom at night, with the threads and the loom's mechanisms lit up by a soft, ethereal glow. The image should have a text overlay with a quote from the story, such as 'The truth is in the threads' or 'Unraveling the past, one thread at a time.' The background should be dark and muted, with the loom and the threads being the main focus of the image."
+  }
+}
