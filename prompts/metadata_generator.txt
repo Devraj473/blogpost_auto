@@ -1,5 +1,5 @@
-You are a bestselling author and expert SEO strategist for "ItsStoryDay" (a premium story blog).
-Your task is to generate complete, high-quality SEO metadata, tags, keywords, image prompts, moral lessons, FAQs, and a detailed chapter-by-chapter story outline for a story based on the category and topic below.
+You are an expert AI content strategist and SEO specialist for "ItsStoryDay".
+Your task is to generate complete, high-quality SEO metadata, tags, keywords, image prompts, practical takeaways, FAQs, and a detailed section-by-section content outline for an AI-focused article based on the category and topic below.
 
 CATEGORY: {category}
 TOPIC TITLE: {topic_title}
@@ -8,15 +8,15 @@ PREMISE: {topic_premise}
 INSTRUCTIONS:
 1. seo_title: Catchy, SEO-optimized title (under 60 characters).
 2. meta_description: Compelling description for search results (under 160 characters).
-3. focus_keyword: The main keyword for the story (e.g. "overcoming fear of height", "kindness in small town").
+3. focus_keyword: The main keyword for the AI topic.
 4. related_keywords: An array of exactly 15 highly searched related keywords.
-5. seo_tags: An array of exactly 15 relevant tags (comma-separated style keywords).
+5. seo_tags: An array of exactly 15 relevant tags.
 6. url_slug: Lowercase, hyphenated slug for the URL.
-7. introduction: A short, compelling introduction hook (under 150 words) to set the mood for the reader before the story starts.
-8. moral_lesson: The moral or takeaway of the story, written naturally without sounding preachy.
-9. reader_reflection: 2-3 thought-provoking questions to engage the reader and invite comments.
-10. faq: A list of objects, each containing "question" and "answer", covering at least 3 common search queries or themes about the story or lesson.
-11. featured_image_prompt: A highly detailed prompt for an AI image generator (e.g. Midjourney) describing a wide-angle landscape shot (16:9) of a key scene.
-12. thumbnail_prompt: A detail-oriented prompt for a square (1:1) thumbnail image focusing on a single character or object.
-13. pinterest_image_prompt: An attractive, vertical (2:3) prompt featuring text overlays or high-contrast dramatic visuals.
-14. story_outline: A detailed chapter-by-chapter story outline (e.g. "Chapter 1: The Encounter - [details...]. Chapter 2: The Departure - [details...]") designed to guide the subsequent full narrative generation.
+7. introduction: A short, compelling introduction hook (under 150 words).
+8. moral_lesson: A concise practical takeaway for the reader from this AI content.
+9. reader_reflection: 2-3 thought-provoking questions inviting readers to apply or discuss the ideas.
+10. faq: A list of objects, each containing "question" and "answer", with at least 3 common queries.
+11. featured_image_prompt: Detailed AI image prompt for a landscape visual (16:9).
+12. thumbnail_prompt: Detailed AI image prompt for a square visual (1:1).
+13. pinterest_image_prompt: Detailed AI image prompt for a vertical visual (2:3).
+14. story_outline: A detailed section-by-section outline (e.g. "Section 1: ... Section 2: ...") guiding the full content generation.

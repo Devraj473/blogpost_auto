@@ -13,16 +13,16 @@ from src.story.prompts import load_prompt_template
 logger = setup_logger("story_generator")
 
 CATEGORIES = [
-    "Motivational Stories",
-    "Moral Stories",
-    "Inspirational Stories",
-    "Success Stories",
-    "Kids Stories",
-    "Bedtime Stories",
-    "Animal Stories",
-    "Life Lesson Stories",
-    "Adventure Stories",
-    "Mystery Stories"
+    "AI Stories & Ideas",
+    "AI Project Ideas",
+    "AI Prompts & Tools",
+    "Machine Learning Tips",
+    "Generative AI Trends",
+    "AI Career Insights",
+    "AI Applications & Use Cases",
+    "AI Ethics & Safety",
+    "AI News & Updates",
+    "Prompt Engineering Guides"
 ]
 
 class StoryGenerator:
@@ -124,7 +124,7 @@ class StoryGenerator:
         Generates a unique story topic and premise using AI.
         """
         logger.info(f"Generating story topic for category: '{category}'...")
-        system_prompt = "You are a creative editorial planner for ItsStoryDay blog."
+        system_prompt = "You are an AI education editorial planner for ItsStoryDay blog."
         
         # Load and format topic generator prompt
         raw_template = load_prompt_template("topic_generator.txt")
@@ -152,8 +152,8 @@ class StoryGenerator:
         # Step 1: Generate Metadata and Outline
         logger.info(f"Step 1: Generating metadata and story outline for '{topic.title}'...")
         system_prompt_meta = (
-            "You are a bestselling novelist and professional SEO content writer. "
-            "Your task is to generate complete, high-quality SEO metadata, tags, and a story outline."
+            "You are an expert AI educator and professional SEO content writer. "
+            "Your task is to generate complete, high-quality SEO metadata, tags, and a structured content outline."
         )
         raw_meta_template = load_prompt_template("metadata_generator.txt")
         user_prompt_meta = raw_meta_template.format(
@@ -173,8 +173,8 @@ class StoryGenerator:
         # Step 2: Generate Story Narrative
         logger.info(f"Step 2: Generating full narrative text (1500-3000 words)...")
         system_prompt_story = (
-            "You are a bestselling novelist who writes rich, visual, emotional, and long-form stories. "
-            "You write in a highly descriptive literary style, expanding scenes, dialogues, and inner thoughts."
+            "You are an expert AI educator and technical writer who creates practical, clear, and engaging long-form guides. "
+            "You write with real-world examples, actionable steps, and beginner-friendly explanations."
         )
         raw_story_template = load_prompt_template("story_generator.txt")
         user_prompt_story = raw_story_template.format(
@@ -198,9 +198,9 @@ class StoryGenerator:
         if word_count < 1000:
             logger.warning(f"Narrative is slightly short ({word_count} words). Requesting expansion...")
             user_prompt_expand = (
-                f"Your previous story was only {word_count} words. "
-                f"Please rewrite it to be significantly longer, more descriptive, and at least 1500 words. "
-                f"Write out the chapters in full, expand all conversations, and add more scenes detailing the struggle. "
+                f"Your previous draft was only {word_count} words. "
+                f"Please rewrite it to be significantly longer, more detailed, and at least 1500 words. "
+                f"Write out all sections in full, expand explanations and examples, and add practical implementation details. "
                 f"Here was the outline:\n{metadata.story_outline}\n\n"
                 f"And here was your draft:\n{narrative}"
             )

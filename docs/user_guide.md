@@ -1,6 +1,6 @@
 # ItsStoryDay - User & Administrator Guide
 
-This guide provides exhaustive instructions for setting up, configuring, customising, and troubleshooting the ItsStoryDay Automation Platform.
+This guide provides exhaustive instructions for setting up, configuring, customising, and troubleshooting the ItsStoryDay Automation Platform for daily AI educational content.
 
 ---
 
@@ -59,13 +59,13 @@ By default, the code uses `llama-3-70b-8192` or `llama-3.3-70b-specdec`.
 ## 🛠️ Customisation & Extension
 
 ### Modifying the Categories List
-To change or add story categories:
+To change or add AI content categories:
 1. Open [generator.py](file:///d:/Dev_Projects/Blogpost_Auto/src/story/generator.py).
 2. Locate the global list `CATEGORIES` and add/edit entries.
-3. Update the category guidelines in `prompts/topic_generator.txt` to give clear instructions to the AI on the new categories.
+3. Update the category guidelines in `prompts/topic_generator.txt` so the AI generates the right type of AI-focused educational content.
 
 ### Adjusting Word Limits
-The AI client enforces Pydantic validations on story length. If you want to increase or decrease the target size:
+The AI client enforces Pydantic validations on content length. If you want to increase or decrease the target size:
 1. Update `BLOG_LENGTH_MIN` and `BLOG_LENGTH_MAX` in your configuration (`.env` or GitHub Secrets).
 2. Update the `validate_word_count` logic in [models.py](file:///d:/Dev_Projects/Blogpost_Auto/src/story/models.py#L60-L68) to match the new minimum limits.
 
@@ -89,4 +89,4 @@ The AI client enforces Pydantic validations on story length. If you want to incr
 
 ### 4. Pexels Image API returns empty
 * **Error:** `No photos found for query`
-  * **Solution:** Pexels API will fall back automatically to broader queries like the category name (e.g. "Mystery Stories" -> searching Pexels for "mystery") if specific visual keyword terms fail. Ensure your `PEXELS_API_KEY` is set correctly.
+  * **Solution:** Pexels API will fall back automatically to broader queries like the category name (e.g. "AI Project Ideas" -> searching Pexels for "technology") if specific visual keyword terms fail. Ensure your `PEXELS_API_KEY` is set correctly.

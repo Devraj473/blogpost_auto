@@ -6,6 +6,19 @@ from unittest.mock import MagicMock, patch
 from src.config import AppConfig
 from src.story.generator import StoryGenerator, CATEGORIES
 
+EXPECTED_AI_CATEGORIES = [
+    "AI Stories & Ideas",
+    "AI Project Ideas",
+    "AI Prompts & Tools",
+    "Machine Learning Tips",
+    "Generative AI Trends",
+    "AI Career Insights",
+    "AI Applications & Use Cases",
+    "AI Ethics & Safety",
+    "AI News & Updates",
+    "Prompt Engineering Guides",
+]
+
 class TestStoryGenerator(unittest.TestCase):
     
     def setUp(self):
@@ -34,7 +47,7 @@ class TestStoryGenerator(unittest.TestCase):
             os.remove(temp_state_file)
             
         try:
-            # 1. First run, no state file. Should pick index 0 (Motivational Stories)
+            # 1. First run, no state file. Should pick index 0 (AI Stories & Ideas)
             category, idx = generator.select_category()
             self.assertEqual(category, CATEGORIES[0])
             self.assertEqual(idx, 0)
@@ -48,7 +61,7 @@ class TestStoryGenerator(unittest.TestCase):
                 data = json.load(f)
                 self.assertEqual(data["last_category_index"], 0)
                 
-            # 2. Second run. Should read state file and pick index 1 (Moral Stories)
+            # 2. Second run. Should read state file and pick index 1 (AI Project Ideas)
             category, idx = generator.select_category()
             self.assertEqual(category, CATEGORIES[1])
             self.assertEqual(idx, 1)
@@ -65,6 +78,12 @@ class TestStoryGenerator(unittest.TestCase):
             # Clean up test state file
             if os.path.exists(temp_state_file):
                 os.remove(temp_state_file)
+
+    def test_categories_match_ai_strategy(self):
+        """
+        Verifies the configured categories match the AI-focused daily strategy.
+        """
+        self.assertEqual(CATEGORIES, EXPECTED_AI_CATEGORIES)
 
     def test_category_selection_random(self):
         """
